@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.helpisnear.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/home_fragment"/>
+
+    <fragment
+        android:id="@+id/whatToDoFragment"
+        android:name="com.example.helpisnear.ui.what_to_do.WhatToDoFragment"
+        android:label="@string/menu_what_to_do"
+        tools:layout="@layout/what_to_do_fragment" />
+
+    <fragment
+        android:id="@+id/firstAidFragment"
+        android:name="com.example.helpisnear.ui.first_aid.FirstAidFragment"
+        android:label="@string/menu_first_aid"
+        tools:layout="@layout/first_aid_fragment" />
+    <fragment
+        android:id="@+id/mapOfAdverseEventsFragment"
+        android:name="com.example.helpisnear.ui.map_of_adverse_events.MapOfAdverseEventsFragment"
+        android:label="@string/menu_map_of_adverse_events"
+        tools:layout="@layout/map_of_adverse_events_fragment" />
+    <fragment
+        android:id="@+id/checkYourSelfFragment"
+        android:name="com.example.helpisnear.ui.check_yourself.CheckYourSelfFragment"
+        android:label="@string/menu_check_yourself"
+        tools:layout="@layout/check_your_self_fragment" />
+    <fragment
+        android:id="@+id/encyclopediaFragment"
+        android:name="com.example.helpisnear.ui.encyclopedia.EncyclopediaFragment"
+        android:label="@string/menu_encyclopedia"
+        tools:layout="@layout/encyclopedia_fragment" />
+    <fragment
+        android:id="@+id/informationAndSettingsFragment"
+        android:name="com.example.helpisnear.ui.information_and_settings.InformationAndSettingsFragment"
+        android:label="@string/menu_information_and_settings"
+        tools:layout="@layout/information_and_settings_fragment" />
+
+</navigation>

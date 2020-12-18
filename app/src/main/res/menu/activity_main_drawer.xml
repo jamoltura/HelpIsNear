@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item   android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home"
+
+                android:title="@string/menu_home"/>
+
+        <item   android:id="@+id/whatToDoFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_what_to_do"/>
+
+        <item   android:id="@+id/firstAidFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_first_aid"/>
+
+        <item   android:id="@+id/mapOfAdverseEventsFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_map_of_adverse_events"/>
+
+        <item   android:id="@+id/checkYourSelfFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_check_yourself"/>
+
+        <item   android:id="@+id/encyclopediaFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_encyclopedia"/>
+
+        <item   android:id="@+id/informationAndSettingsFragment"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_information_and_settings"/>
+
+    </group>
+
+</menu>

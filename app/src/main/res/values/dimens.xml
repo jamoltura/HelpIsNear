@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--  dialog_call    -->
+    <dimen name="call_dialog_text_margin">5dp</dimen>
+    <dimen name="call_dialog_btn_margin">20dp</dimen>
+
+    <!--  item list      -->
+    <dimen name="img_width">65dp</dimen>
+    <dimen name="img_height">55dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_margin_start">5dp</dimen>
+
+</resources>

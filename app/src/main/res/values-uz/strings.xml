@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Yordam yaqin</string>
+    <string name="app_mes">FVV O‘zbekiston</string>
+
+    <!--  menu   -->
+    <string name="menu_home">Asosiy menyu</string>
+    <string name="menu_what_to_do">Nima qilish kerak?</string>
+    <string name="menu_first_aid">Birinchi yordam</string>
+    <string name="menu_map_of_adverse_events">Noqulay hodisalar xaritasi</string>
+    <string name="menu_check_yourself">O‘zingizni tekshiring</string>
+    <string name="menu_encyclopedia">Entsiklopediya</string>
+    <string name="menu_information_and_settings">Ma‘lumot va sozlamalar</string>
+
+    <!-- other  -->
+    <string name="search_hint">Izlash</string>
+    <string name="adress_site">https://www.fvv.uz/uz</string>
+
+    <!--  call dialog           -->
+    <string name="dialog_title">Siz favqulodda vaziyat tugmachasini bosdingiz</string>
+    <string name="dialog_btn_call">FVVga qo`ng`iroq qilish</string>
+    <string name="dialog_btn_setting">Sozlamalarni o`zgartirish</string>
+    <string name="dialog_btn_close">Bekor qilish</string>
+
+    <!--  what_to_do   elements  -->
+    <string name="what_to_do_element_1">Kimyoviy xavfli moddalar bilan baxtsiz hodisa</string>
+    <string name="what_to_do_element_2">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_3">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_4">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_5">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_6">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_7">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_8">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_9">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_10">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_11">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_12">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_13">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_14">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_15">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_16">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_17">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_18">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_19">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_20">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_21">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_22">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_23">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_24">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_25">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_26">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_27">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_28">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_29">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_30">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_31">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_32">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_33">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_34">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_35">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_36">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_37">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_38">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_39">Benzin va boshqa yonuvchan suyuqliklar</string>
+    <string name="what_to_do_element_40">Benzin va boshqa yonuvchan suyuqliklar</string>
+
+    <!--  first_aid   elements  -->
+    <string name="first_aid_element_1">Birinchi yordam: nima qilish kerak?</string>
+    <string name="first_aid_element_2">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_3">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_4">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_5">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_6">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_7">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_8">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_9">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_10">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_11">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_12">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_13">Yurak-o\'pka reanimatsiyasi</string>
+    <string name="first_aid_element_14">Yurak-o\'pka reanimatsiyasi</string>
+
+    <!--  map_of_adverse_events   elements  -->
+
+    <!--  check_your_self   elements  -->
+    <string name="check_your_self_element_1">Momaqaldiroq</string>
+    <string name="check_your_self_element_2">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_3">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_4">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_5">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_6">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_7">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_8">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_9">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_10">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_11">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_12">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_13">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_14">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_15">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_16">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_17">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_18">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_19">Xavfsiz dam olish</string>
+    <string name="check_your_self_element_20">Xavfsiz dam olish</string>
+
+    <!--  encyclopedia   elements  -->
+    <string name="encyclopedia_element_1">Suv xavfsizligi</string>
+    <string name="encyclopedia_element_2">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_3">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_4">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_5">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_6">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_7">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_8">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_9">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_10">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_11">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_12">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_13">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_14">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_15">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_16">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_17">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_18">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_19">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_20">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_21">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_22">Xavfsiz gulxan</string>
+    <string name="encyclopedia_element_23">Xavfsiz gulxan</string>
+
+    <!--  information_and_settings   elements  -->
+    <string name="information_and_settings_element_1">Sozlamalar</string>
+    <string name="information_and_settings_element_2">Ko\'rsatmalar</string>
+    <string name="information_and_settings_element_3">Foydalanish shartlari</string>
+    <string name="information_and_settings_element_4">Ilova haqida</string>
+
+
+</resources>

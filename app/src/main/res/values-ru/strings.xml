@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Помощь рядом</string>
+    <string name="app_mes">МЧС Узбекистан</string>
+
+    <!--  menu   -->
+    <string name="menu_home">Главное меню</string>
+    <string name="menu_what_to_do">Что делать?</string>
+    <string name="menu_first_aid">Первая помощь</string>
+    <string name="menu_map_of_adverse_events">Карта неблагоприятных явлений</string>
+    <string name="menu_check_yourself">Проверь себе</string>
+    <string name="menu_encyclopedia">Энциклопедия</string>
+    <string name="menu_information_and_settings">Информация и настройки</string>
+
+    <!--  other  -->
+    <string name="search_hint">Поиск</string>
+    <string name="adress_site">https://www.fvv.uz/ru</string>
+
+    <!--  call dialog           -->
+    <string name="dialog_title">Вы нажали кнопку экстренного вызова</string>
+    <string name="dialog_btn_call">Звонить в МЧС</string>
+    <string name="dialog_btn_setting">Изменить настройки</string>
+    <string name="dialog_btn_close">Отмена</string>
+
+    <!--  what_to_do   elements  -->
+    <string name="what_to_do_element_1">Авария с химически опасным веществом</string>
+    <string name="what_to_do_element_2">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_3">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_4">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_5">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_6">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_7">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_8">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_9">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_10">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_11">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_12">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_13">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_14">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_15">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_16">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_17">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_18">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_19">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_20">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_21">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_22">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_23">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_24">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_25">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_26">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_27">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_28">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_29">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_30">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_31">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_32">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_33">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_34">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_35">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_36">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_37">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_38">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_39">Бензин и другие горючие жидкости</string>
+    <string name="what_to_do_element_40">Бензин и другие горючие жидкости</string>
+
+    <!--  first_aid   elements  -->
+    <string name="first_aid_element_1">Первая помощь: что делать?</string>
+    <string name="first_aid_element_2">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_3">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_4">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_5">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_6">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_7">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_8">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_9">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_10">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_11">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_12">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_13">Сердечно-легочная реанимация</string>
+    <string name="first_aid_element_14">Сердечно-легочная реанимация</string>
+
+    <!--  map_of_adverse_events   elements  -->
+
+    <!--  check_your_self   elements  -->
+    <string name="check_your_self_element_1">Гроза</string>
+    <string name="check_your_self_element_2">Безопасный отдых</string>
+    <string name="check_your_self_element_3">Безопасный отдых</string>
+    <string name="check_your_self_element_4">Безопасный отдых</string>
+    <string name="check_your_self_element_5">Безопасный отдых</string>
+    <string name="check_your_self_element_6">Безопасный отдых</string>
+    <string name="check_your_self_element_7">Безопасный отдых</string>
+    <string name="check_your_self_element_8">Безопасный отдых</string>
+    <string name="check_your_self_element_9">Безопасный отдых</string>
+    <string name="check_your_self_element_10">Безопасный отдых</string>
+    <string name="check_your_self_element_11">Безопасный отдых</string>
+    <string name="check_your_self_element_12">Безопасный отдых</string>
+    <string name="check_your_self_element_13">Безопасный отдых</string>
+    <string name="check_your_self_element_14">Безопасный отдых</string>
+    <string name="check_your_self_element_15">Безопасный отдых</string>
+    <string name="check_your_self_element_16">Безопасный отдых</string>
+    <string name="check_your_self_element_17">Безопасный отдых</string>
+    <string name="check_your_self_element_18">Безопасный отдых</string>
+    <string name="check_your_self_element_19">Безопасный отдых</string>
+    <string name="check_your_self_element_20">Безопасный отдых</string>
+
+    <!--  encyclopedia   elements  -->
+    <string name="encyclopedia_element_1">Безопасность на воде</string>
+    <string name="encyclopedia_element_2">Безопасный костёр</string>
+    <string name="encyclopedia_element_3">Безопасный костёр</string>
+    <string name="encyclopedia_element_4">Безопасный костёр</string>
+    <string name="encyclopedia_element_5">Безопасный костёр</string>
+    <string name="encyclopedia_element_6">Безопасный костёр</string>
+    <string name="encyclopedia_element_7">Безопасный костёр</string>
+    <string name="encyclopedia_element_8">Безопасный костёр</string>
+    <string name="encyclopedia_element_9">Безопасный костёр</string>
+    <string name="encyclopedia_element_10">Безопасный костёр</string>
+    <string name="encyclopedia_element_11">Безопасный костёр</string>
+    <string name="encyclopedia_element_12">Безопасный костёр</string>
+    <string name="encyclopedia_element_13">Безопасный костёр</string>
+    <string name="encyclopedia_element_14">Безопасный костёр</string>
+    <string name="encyclopedia_element_15">Безопасный костёр</string>
+    <string name="encyclopedia_element_16">Безопасный костёр</string>
+    <string name="encyclopedia_element_17">Безопасный костёр</string>
+    <string name="encyclopedia_element_18">Безопасный костёр</string>
+    <string name="encyclopedia_element_19">Безопасный костёр</string>
+    <string name="encyclopedia_element_20">Безопасный костёр</string>
+    <string name="encyclopedia_element_21">Безопасный костёр</string>
+    <string name="encyclopedia_element_22">Безопасный костёр</string>
+    <string name="encyclopedia_element_23">Безопасный костёр</string>
+
+    <!--  information_and_settings   elements  -->
+    <string name="information_and_settings_element_1">Настройки</string>
+    <string name="information_and_settings_element_2">Инструкции</string>
+    <string name="information_and_settings_element_3">Пользовательское соглашение</string>
+    <string name="information_and_settings_element_4">О приложении</string>
+
+</resources>

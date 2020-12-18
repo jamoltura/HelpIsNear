@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Help Is Near</string>
+    <string name="app_mes">MES Uzbekistan</string>
+
+    <!--  menu   -->
+    <string name="menu_home">Main menu</string>
+    <string name="menu_what_to_do">What to do?</string>
+    <string name="menu_first_aid">First aid</string>
+    <string name="menu_map_of_adverse_events">Map of adverse events</string>
+    <string name="menu_check_yourself">Check yourself</string>
+    <string name="menu_encyclopedia">Encyclopedia</string>
+    <string name="menu_information_and_settings">Information and settings</string>
+
+    <!-- other   -->
+    <string name="search_hint">Search</string>
+    <string name="adress_site">https://www.fvv.uz/en</string>
+
+    <!--  call dialog            -->
+    <string name="dialog_title">You pressed the emergency button</string>
+    <string name="dialog_btn_call">Call the Ministry of Emergencies</string>
+    <string name="dialog_btn_setting">Change settings</string>
+    <string name="dialog_btn_close">Cancel</string>
+
+    <!--  what_to_do   elements  -->
+    <string name="what_to_do_element_1">Accident with a chemically hazardous substance</string>
+    <string name="what_to_do_element_2">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_3">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_4">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_5">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_6">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_7">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_8">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_9">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_10">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_11">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_12">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_13">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_14">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_15">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_16">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_17">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_18">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_19">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_20">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_21">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_22">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_23">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_24">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_25">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_26">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_27">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_28">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_29">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_30">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_31">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_32">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_33">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_34">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_35">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_36">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_37">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_38">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_39">Gasoline and other flammable liquids</string>
+    <string name="what_to_do_element_40">Gasoline and other flammable liquids</string>
+
+    <!--  first_aid   elements  -->
+    <string name="first_aid_element_1">First aid: what to do?</string>
+    <string name="first_aid_element_2">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_3">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_4">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_5">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_6">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_7">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_8">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_9">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_10">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_11">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_12">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_13">Cardiopulmonary resuscitation</string>
+    <string name="first_aid_element_14">Cardiopulmonary resuscitation</string>
+
+    <!--  map_of_adverse_events   elements  -->
+
+    <!--  check_your_self   elements  -->
+    <string name="check_your_self_element_1">Thunderstorm</string>
+    <string name="check_your_self_element_2">Safe rest</string>
+    <string name="check_your_self_element_3">Safe rest</string>
+    <string name="check_your_self_element_4">Safe rest</string>
+    <string name="check_your_self_element_5">Safe rest</string>
+    <string name="check_your_self_element_6">Safe rest</string>
+    <string name="check_your_self_element_7">Safe rest</string>
+    <string name="check_your_self_element_8">Safe rest</string>
+    <string name="check_your_self_element_9">Safe rest</string>
+    <string name="check_your_self_element_10">Safe rest</string>
+    <string name="check_your_self_element_11">Safe rest</string>
+    <string name="check_your_self_element_12">Safe rest</string>
+    <string name="check_your_self_element_13">Safe rest</string>
+    <string name="check_your_self_element_14">Safe rest</string>
+    <string name="check_your_self_element_15">Safe rest</string>
+    <string name="check_your_self_element_16">Safe rest</string>
+    <string name="check_your_self_element_17">Safe rest</string>
+    <string name="check_your_self_element_18">Safe rest</string>
+    <string name="check_your_self_element_19">Safe rest</string>
+    <string name="check_your_self_element_20">Safe rest</string>
+
+    <!--  encyclopedia   elements  -->
+    <string name="encyclopedia_element_1">Water safety</string>
+    <string name="encyclopedia_element_2">Safe bonfire</string>
+    <string name="encyclopedia_element_3">Safe bonfire</string>
+    <string name="encyclopedia_element_4">Safe bonfire</string>
+    <string name="encyclopedia_element_5">Safe bonfire</string>
+    <string name="encyclopedia_element_6">Safe bonfire</string>
+    <string name="encyclopedia_element_7">Safe bonfire</string>
+    <string name="encyclopedia_element_8">Safe bonfire</string>
+    <string name="encyclopedia_element_9">Safe bonfire</string>
+    <string name="encyclopedia_element_10">Safe bonfire</string>
+    <string name="encyclopedia_element_11">Safe bonfire</string>
+    <string name="encyclopedia_element_12">Safe bonfire</string>
+    <string name="encyclopedia_element_13">Safe bonfire</string>
+    <string name="encyclopedia_element_14">Safe bonfire</string>
+    <string name="encyclopedia_element_15">Safe bonfire</string>
+    <string name="encyclopedia_element_16">Safe bonfire</string>
+    <string name="encyclopedia_element_17">Safe bonfire</string>
+    <string name="encyclopedia_element_18">Safe bonfire</string>
+    <string name="encyclopedia_element_19">Safe bonfire</string>
+    <string name="encyclopedia_element_20">Safe bonfire</string>
+    <string name="encyclopedia_element_21">Safe bonfire</string>
+    <string name="encyclopedia_element_22">Safe bonfire</string>
+    <string name="encyclopedia_element_23">Safe bonfire</string>
+
+    <!--  information_and_settings   elements  -->
+    <string name="information_and_settings_element_1">Settings</string>
+    <string name="information_and_settings_element_2">Instructions</string>
+    <string name="information_and_settings_element_3">Terms of use</string>
+    <string name="information_and_settings_element_4">About the app</string>
+
+
+</resources>

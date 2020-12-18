@@ -1,3 +1,138 @@
 <resources>
-    <string name="app_name">HelpIsNear</string>
+    <string name="app_name">Ёрдам якин</string>
+    <string name="app_mes">ФВВ Узбекистон</string>
+
+    <!--  menu   -->
+    <string name="menu_home">Асосий меню</string>
+    <string name="menu_what_to_do">Нима килиш керак?</string>
+    <string name="menu_first_aid">Биринчи ёрдам</string>
+    <string name="menu_map_of_adverse_events">Нокулай ходисалар харитаси</string>
+    <string name="menu_check_yourself">Узингизни текширинг</string>
+    <string name="menu_encyclopedia">Энциклопедия</string>
+    <string name="menu_information_and_settings">Маълумот ва созламалар</string>
+
+    <!-- other  -->
+    <string name="search_hint">Излаш</string>
+    <string name="adress_site">https://www.fvv.uz/uz</string>
+
+    <!--  call dialog           -->
+    <string name="dialog_title">Сиз фавкулодда вазият тугмачасини босдингиз</string>
+    <string name="dialog_btn_call">ФВВга кунгирок килиш</string>
+    <string name="dialog_btn_setting">Созламаларни узгартириш</string>
+    <string name="dialog_btn_close">Бекор килиш</string>
+
+    <!--  what_to_do   elements  -->
+    <string name="what_to_do_element_1">Кимёвий хавфли моддалар билан бахтсиз ходиса</string>
+    <string name="what_to_do_element_2">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_3">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_4">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_5">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_6">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_7">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_8">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_9">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_10">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_11">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_12">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_13">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_14">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_15">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_16">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_17">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_18">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_19">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_20">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_21">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_22">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_23">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_24">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_25">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_26">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_27">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_28">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_29">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_30">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_31">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_32">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_33">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_34">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_35">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_36">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_37">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_38">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_39">Бензин ва бошка ёнувчан суюкликлар</string>
+    <string name="what_to_do_element_40">Бензин ва бошка ёнувчан суюкликлар</string>
+
+    <!--  first_aid   elements  -->
+    <string name="first_aid_element_1">Биринчи ёрдам: нима килиш керак?</string>
+    <string name="first_aid_element_2">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_3">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_4">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_5">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_6">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_7">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_8">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_9">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_10">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_11">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_12">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_13">Юрак-упка реанимацияси</string>
+    <string name="first_aid_element_14">Юрак-упка реанимацияси</string>
+
+    <!--  map_of_adverse_events   elements  -->
+
+    <!--  check_your_self   elements  -->
+    <string name="check_your_self_element_1">Момакалдирок</string>
+    <string name="check_your_self_element_2">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_3">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_4">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_5">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_6">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_7">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_8">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_9">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_10">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_11">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_12">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_13">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_14">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_15">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_16">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_17">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_18">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_19">Хавфсиз дам олиш</string>
+    <string name="check_your_self_element_20">Хавфсиз дам олиш</string>
+
+    <!--  encyclopedia   elements  -->
+    <string name="encyclopedia_element_1">Сув хавфсизлиги</string>
+    <string name="encyclopedia_element_2">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_3">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_4">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_5">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_6">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_7">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_8">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_9">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_10">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_11">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_12">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_13">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_14">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_15">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_16">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_17">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_18">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_19">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_20">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_21">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_22">Хавфсиз гулхан</string>
+    <string name="encyclopedia_element_23">Хавфсиз гулхан</string>
+
+    <!--  information_and_settings   elements  -->
+    <string name="information_and_settings_element_1">Созламалар</string>
+    <string name="information_and_settings_element_2">Курсатмалар</string>
+    <string name="information_and_settings_element_3">Фойдаланиш шартлари</string>
+    <string name="information_and_settings_element_4">Илова хакида</string>
+
+
 </resources>
