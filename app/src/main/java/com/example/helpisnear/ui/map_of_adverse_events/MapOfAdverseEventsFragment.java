@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,8 +17,6 @@ import com.example.helpisnear.R;
 import com.example.helpisnear.model.HomeViewModel;
 
 public class MapOfAdverseEventsFragment extends Fragment {
-
-    private HomeViewModel mViewModel;
 
     public static MapOfAdverseEventsFragment newInstance() {
         return new MapOfAdverseEventsFragment();
@@ -32,7 +31,7 @@ public class MapOfAdverseEventsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
         // TODO: Use the ViewModel
     }
 

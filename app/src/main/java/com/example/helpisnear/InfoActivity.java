@@ -3,6 +3,7 @@ package com.example.helpisnear;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -106,9 +107,16 @@ public class InfoActivity extends AppCompatActivity {
 
         String action = getIntent().getStringExtra("type_info");
 
-        if (action.equals("simple")){
+
+        if (action.equals("WhatToDo")){
             infoFragment = new InfoFragment();
-            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, infoFragment).commit();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, infoFragment)
+                    .commit();
         }
+
+        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+        mViewModel.init(getApplicationContext());
     }
 }

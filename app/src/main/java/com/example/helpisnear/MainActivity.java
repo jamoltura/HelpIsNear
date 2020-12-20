@@ -9,6 +9,7 @@ import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavBackStackEntry;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -183,6 +184,9 @@ public class MainActivity extends AppCompatActivity {
                 navController.navigate(R.id.informationAndSettingsFragment);
             }
         };
+
+        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+       // mViewModel.init(getApplicationContext());
     }
 
     public MobileNavigation getNavigation() {

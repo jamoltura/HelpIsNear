@@ -1,12 +1,11 @@
 package com.example.helpisnear.ui.check_yourself;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,8 +21,6 @@ import com.example.helpisnear.model.HomeViewModel;
 public class CheckYourSelfFragment extends Fragment {
 
     private static final String TAG = "myLogs";
-
-    private HomeViewModel mViewModel;
 
     private RecyclerView recyclerView;
     private OtherAdapter adapter;
@@ -48,7 +45,7 @@ public class CheckYourSelfFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
 
         adapter = new OtherAdapter(getContext(), ListResource.getInstance().getCheckYourSelfResource());
 

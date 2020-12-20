@@ -56,8 +56,6 @@ public class OtherAdapter extends RecyclerView.Adapter<OtherAdapter.ViewHolder>{
             super(itemView);
             imageView = itemView.findViewById(R.id.img_item_list_arrow);
             textView = itemView.findViewById(R.id.text_item_list_arrow);
-
-            itemView.setOnClickListener((v -> Log.d(TAG, String.valueOf(getAdapterPosition()))));
         }
     }
 }

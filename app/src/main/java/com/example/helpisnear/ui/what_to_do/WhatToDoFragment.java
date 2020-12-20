@@ -9,6 +9,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,8 +34,6 @@ public class WhatToDoFragment extends Fragment {
 
     private int LAUNCH_ACTIVITY= 1;
 
-    private HomeViewModel mViewModel;
-
     private RecyclerView recyclerView;
     private OtherAdapter adapter;
 
@@ -54,14 +53,14 @@ public class WhatToDoFragment extends Fragment {
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getContext(), InfoActivity.class);
-                intent.putExtra("type_info", "simple");
+                intent.putExtra("type_info", "WhatToDo");
+                intent.putExtra("position", String.valueOf(position));
                 startActivityForResult(intent, LAUNCH_ACTIVITY);
             }
 
             @Override
             public void onLongItemClick(View view, int position) {
-                MobileNavigation navigation = ((MainActivity) getActivity()).getNavigation();
-                navigation.home_map_of_adverse_events();
+
             }
         }));
 
@@ -72,7 +71,7 @@ public class WhatToDoFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
 
         adapter = new OtherAdapter(getContext(), ListResource.getInstance().getWhatToDoResource());
 
