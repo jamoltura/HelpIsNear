@@ -21,6 +21,28 @@
     <string name="dialog_btn_setting">Созламаларни узгартириш</string>
     <string name="dialog_btn_close">Бекор килиш</string>
 
+    <!--  settingLang -->
+    <string name="header_lang">Тил созламалари</string>
+
+    <string name="lang_uz_l">O`zb</string>
+    <string name="lang_uz_k">Узб</string>
+    <string name="lang_ru">Рус</string>
+    <string name="lang_en">Анг</string>
+
+    <string name="text_btn_lang_close">Ёпиш</string>
+    <string name="text_btn_lang_run">Ижро этиш</string>
+
+    <!--  set_call_btn     -->
+    <string name="header_set_call_btn">Фавкуладда чакирув тугмачасини босиш буйича харакатларни созлаш</string>
+    <string name="body_1_set_call_btn">Асосий</string>
+    <string name="checkbox_1_set_call_btn">ФВВга кунгирок килиш</string>
+    <string name="body_2_set_call_btn">Кушимча</string>
+    <string name="body_3_set_call_btn">Сизнинг операторингиз тариф режасига мувофик туловлар</string>
+    <string name="radiobtn_1_set_call_btn">Кушимча чоралар курманг</string>
+    <string name="radiobtn_2_set_call_btn">Олдиндан урнатилган ракамга кунгирок килинг</string>
+    <string name="radiobtn_3_set_call_btn">Олдиндан урнатилган ракамга СМС юборинг</string>
+    <string name="radiobtn_4_set_call_btn">ФВВга кунгирок килиш</string>
+
     <!--  what_to_do   elements  -->
     <string name="what_to_do_element_1">Кимёвий хавфли моддалар билан бахтсиз ходиса</string>
     <string name="what_to_do_element_2">Бензин ва бошка ёнувчан суюкликлар</string>
@@ -133,6 +155,10 @@
     <string name="information_and_settings_element_2">Курсатмалар</string>
     <string name="information_and_settings_element_3">Фойдаланиш шартлари</string>
     <string name="information_and_settings_element_4">Илова хакида</string>
+
+    <!--  settings   elements  -->
+    <string name="settings_element_1">Тил</string>
+    <string name="settings_element_2">Фавкулотда вазият тугмачасини созлаш</string>
 
 
 </resources>

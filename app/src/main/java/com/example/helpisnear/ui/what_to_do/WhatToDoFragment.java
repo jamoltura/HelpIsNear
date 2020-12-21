@@ -1,7 +1,5 @@
 package com.example.helpisnear.ui.what_to_do;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,16 +15,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.helpisnear.InfoActivity;
+import com.example.helpisnear.activites.InfoActivity;
 import com.example.helpisnear.MainActivity;
 import com.example.helpisnear.R;
-import com.example.helpisnear.adapters.OtherAdapter;
+import com.example.helpisnear.adapters.MyListAdapter;
 import com.example.helpisnear.classes.ListResource;
 import com.example.helpisnear.interfaces.MobileNavigation;
-import com.example.helpisnear.interfaces.RecyclerItemClickListener;
+import com.example.helpisnear.classes.RecyclerItemClickListener;
 import com.example.helpisnear.model.HomeViewModel;
-
-import java.util.ArrayList;
 
 public class WhatToDoFragment extends Fragment {
 
@@ -35,7 +31,7 @@ public class WhatToDoFragment extends Fragment {
     private int LAUNCH_ACTIVITY= 1;
 
     private RecyclerView recyclerView;
-    private OtherAdapter adapter;
+    private MyListAdapter adapter;
 
     public static WhatToDoFragment newInstance() {
         return new WhatToDoFragment();
@@ -73,7 +69,7 @@ public class WhatToDoFragment extends Fragment {
 
         HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
 
-        adapter = new OtherAdapter(getContext(), ListResource.getInstance().getWhatToDoResource());
+        adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getWhatToDoResource());
 
         recyclerView.setAdapter(adapter);
     }

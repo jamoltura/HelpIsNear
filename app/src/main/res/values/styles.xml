@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -24,6 +24,20 @@
 
     <style name="CallDialog" parent="Theme.MaterialComponents.Light.Dialog.Bridge">
         <item name="colorPrimary">@color/color_btn_dialog</item>
+    </style>
 
+    <style name="buttonsimplebase" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="buttonnormal" parent="buttonsimplebase">
+        <item name="android:background">@drawable/btnsimple</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="buttonlangnormal" parent="buttonnormal">
+        <item name="android:layout_width">@dimen/btn_lang</item>
+        <item name="android:layout_height">@dimen/btn_lang</item>
     </style>
 </resources>

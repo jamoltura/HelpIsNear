@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.example.helpisnear.R;
 import com.example.helpisnear.enums.MyLanguage;
+import com.example.helpisnear.enums.TypeResourse;
 
 import java.io.File;
 import java.io.InputStream;
@@ -96,7 +97,9 @@ public class MchsResource {
 
     private void builder(UnitMchsResource resource){
         builderPdf(resource, PdfFileName);
-        builderPng(resource, PngFileName);
+        if (resource.getTypeResourse() == TypeResourse.PDF_PNG) {
+            builderPng(resource, PngFileName);
+        }
     }
 
     private void builderPdf(UnitMchsResource resource, ArrayList<String> list){

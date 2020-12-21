@@ -21,6 +21,28 @@
     <string name="dialog_btn_setting">Change settings</string>
     <string name="dialog_btn_close">Cancel</string>
 
+    <!--  settingLang -->
+    <string name="header_lang">Language setting</string>
+
+    <string name="lang_uz_l">O`zb</string>
+    <string name="lang_uz_k">Узб</string>
+    <string name="lang_ru">Рус</string>
+    <string name="lang_en">Анг</string>
+
+    <string name="text_btn_lang_close">Close</string>
+    <string name="text_btn_lang_run">Execute</string>
+
+    <!--  set_call_btn     -->
+    <string name="header_set_call_btn">Configuring actions on pressing the emergency call button</string>
+    <string name="body_1_set_call_btn">The main</string>
+    <string name="checkbox_1_set_call_btn">Call the Ministry of Emergencies</string>
+    <string name="body_2_set_call_btn">Additional</string>
+    <string name="body_3_set_call_btn">Billed according to your carrier`s tariff plan</string>
+    <string name="radiobtn_1_set_call_btn">Take no additional action</string>
+    <string name="radiobtn_2_set_call_btn">Call a preset number</string>
+    <string name="radiobtn_3_set_call_btn">Send SMS to a preset number</string>
+    <string name="radiobtn_4_set_call_btn">Call the Ministry of Emergencies</string>
+
     <!--  what_to_do   elements  -->
     <string name="what_to_do_element_1">Accident with a chemically hazardous substance</string>
     <string name="what_to_do_element_2">Gasoline and other flammable liquids</string>
@@ -133,6 +155,10 @@
     <string name="information_and_settings_element_2">Instructions</string>
     <string name="information_and_settings_element_3">Terms of use</string>
     <string name="information_and_settings_element_4">About the app</string>
+
+    <!--  settings   elements  -->
+    <string name="settings_element_1">Language</string>
+    <string name="settings_element_2">Emergency button settings</string>
 
 
 </resources>

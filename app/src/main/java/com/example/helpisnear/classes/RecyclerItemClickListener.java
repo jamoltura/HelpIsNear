@@ -1,4 +1,4 @@
-package com.example.helpisnear.interfaces;
+package com.example.helpisnear.classes;
 
 import android.content.Context;
 import android.view.GestureDetector;

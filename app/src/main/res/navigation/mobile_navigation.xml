@@ -42,5 +42,10 @@
         android:name="com.example.helpisnear.ui.information_and_settings.InformationAndSettingsFragment"
         android:label="@string/menu_information_and_settings"
         tools:layout="@layout/information_and_settings_fragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.helpisnear.ui.information_and_settings.setting.SettingFragment"
+        android:label="@string/information_and_settings_element_1"
+        tools:layout="@layout/setting_fragment" />
 
 </navigation>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    tools:context=".InfoActivity">
+    tools:context=".activites.InfoActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_height="wrap_content"
@@ -44,8 +44,6 @@
             </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
-
-
 
         <SearchView
             android:id="@+id/search_view_info"

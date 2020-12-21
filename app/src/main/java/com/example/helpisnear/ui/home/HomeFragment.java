@@ -1,9 +1,5 @@
 package com.example.helpisnear.ui.home;
 
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,26 +9,18 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.ListView;
 import android.widget.SearchView;
 
 import com.example.helpisnear.MainActivity;
 import com.example.helpisnear.R;
-import com.example.helpisnear.adapters.HomeAdapter;
-import com.example.helpisnear.classes.SliderAdapterExample;
-import com.example.helpisnear.classes.SliderBuilder;
-import com.example.helpisnear.classes.UnitMchsResource;
-import com.example.helpisnear.classes.UnitResource;
+import com.example.helpisnear.adapters.MyListAdapter;
+import com.example.helpisnear.classes.ListResource;
 import com.example.helpisnear.interfaces.MobileNavigation;
-import com.example.helpisnear.interfaces.RecyclerItemClickListener;
+import com.example.helpisnear.classes.RecyclerItemClickListener;
 import com.example.helpisnear.model.HomeViewModel;
-
-import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
@@ -40,7 +28,7 @@ public class HomeFragment extends Fragment {
 
     private SearchView searchView;
     private RecyclerView recyclerView;
-    private HomeAdapter adapter;
+    private MyListAdapter adapter;
 
 
     public static HomeFragment newInstance() {
@@ -90,7 +78,7 @@ public class HomeFragment extends Fragment {
 
         HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
 
-        adapter = new HomeAdapter(getContext());
+        adapter = new MyListAdapter(getContext(), R.layout.item_list, ListResource.getInstance().getHomeResource());
 
         recyclerView.setAdapter(adapter);
     }

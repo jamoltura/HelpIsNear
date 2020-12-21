@@ -21,6 +21,28 @@
     <string name="dialog_btn_setting">Изменить настройки</string>
     <string name="dialog_btn_close">Отмена</string>
 
+    <!--  settingLang -->
+    <string name="header_lang">Настройка языка</string>
+
+    <string name="lang_uz_l">O`zb</string>
+    <string name="lang_uz_k">Узб</string>
+    <string name="lang_ru">Рус</string>
+    <string name="lang_en">Анг</string>
+
+    <string name="text_btn_lang_close">Закрыть</string>
+    <string name="text_btn_lang_run">Выполнять</string>
+
+    <!--  set_call_btn     -->
+    <string name="header_set_call_btn">Настройка действий по нажатию на кнопку экстренного вызова</string>
+    <string name="body_1_set_call_btn">Основные</string>
+    <string name="checkbox_1_set_call_btn">Звонить в МЧС</string>
+    <string name="body_2_set_call_btn">Дополнительные</string>
+    <string name="body_3_set_call_btn">Взимается плата в соответствии с тарифным планом вашего оператора</string>
+    <string name="radiobtn_1_set_call_btn">Не выполнять дополнительных действий</string>
+    <string name="radiobtn_2_set_call_btn">Звонить на предустановленный номер</string>
+    <string name="radiobtn_3_set_call_btn">Отправить СМС на предустановленный номер</string>
+    <string name="radiobtn_4_set_call_btn">Звонить в МЧС</string>
+
     <!--  what_to_do   elements  -->
     <string name="what_to_do_element_1">Авария с химически опасным веществом</string>
     <string name="what_to_do_element_2">Бензин и другие горючие жидкости</string>
@@ -133,5 +155,9 @@
     <string name="information_and_settings_element_2">Инструкции</string>
     <string name="information_and_settings_element_3">Пользовательское соглашение</string>
     <string name="information_and_settings_element_4">О приложении</string>
+
+    <!--  settings   elements  -->
+    <string name="settings_element_1">Язык</string>
+    <string name="settings_element_2">Настройки кнопки экстренного вызова</string>
 
 </resources>

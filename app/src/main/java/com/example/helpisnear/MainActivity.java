@@ -19,6 +19,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.helpisnear.classes.DialogCall;
 import com.example.helpisnear.classes.LocaleHelper;
 import com.example.helpisnear.classes.MyDrawerLayout;
+import com.example.helpisnear.interfaces.InitializationLanguage;
 import com.example.helpisnear.interfaces.MobileNavigation;
 import com.example.helpisnear.model.HomeViewModel;
 import com.google.android.material.navigation.NavigationView;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private SearchView searchView;
     private MobileNavigation navigation;
+    private InitializationLanguage initializationLanguage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,30 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+       init();
+
+        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+       // mViewModel.init(getApplicationContext());
+    }
+
+    private MainActivity getActivi(){
+        return this;
+    }
+
+    private void initLanguage(){
+        navigationView.getMenu().clear();
+        navigationView.inflateMenu(R.menu.activity_main_drawer);
+
+        searchView.setQueryHint(getString(R.string.search_hint));
+
+        navController.getGraph().clear();
+        navController.setGraph(R.navigation.mobile_navigation);
+
+        getNavigation().home_information_and_settings();
+        getNavigation().information_and_settings_setting();
+    }
+
+    private void init(){
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -52,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton btn_call = findViewById(R.id.btn_call);
         btn_call.setOnClickListener((v -> getSupportFragmentManager()
-                                            .beginTransaction()
-                                            .add(new DialogCall(), "dialogCall")
-                                            .commit()));
+                .beginTransaction()
+                .add(new DialogCall(), "dialogCall")
+                .commit()));
 
         drawer = findViewById(R.id.drawer_layout);
 
@@ -107,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
                 params.height = actionBarHeight;
 
                 toolbar.setLayoutParams(params);
-
             }
         });
 
@@ -144,52 +169,97 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+            public void information_and_settings_setting() {
+                navController.navigate(R.id.settingFragment);
+            }
+
+            @Override
             public void stranger_home() {
-                navController.popBackStack();
+                nawUp();
             }
 
             @Override
             public void stranger_what_to_do() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.whatToDoFragment);
             }
 
             @Override
             public void stranger_first_aid() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.firstAidFragment);
             }
 
             @Override
             public void stranger_map_of_adverse_events() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.mapOfAdverseEventsFragment);
             }
 
             @Override
             public void stranger_check_your_self() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.checkYourSelfFragment);
             }
 
             @Override
             public void stranger_encyclopedia() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.encyclopediaFragment);
             }
 
             @Override
             public void stranger_information_and_settings() {
-                navController.popBackStack();
+                nawUp();
                 navController.navigate(R.id.informationAndSettingsFragment);
             }
         };
 
-        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-       // mViewModel.init(getApplicationContext());
+        initializationLanguage = new InitializationLanguage() {
+            @Override
+            public void init_ru() {
+                LocaleHelper.onAttach(getApplicationContext(), "ru");
+                LocaleHelper.onAttach(getActivi(), "ru");
+                initLanguage();
+            }
+
+            @Override
+            public void init_default() {
+                LocaleHelper.onAttach(getApplicationContext(), "default");
+                LocaleHelper.onAttach(getActivi(), "default");
+                initLanguage();
+            }
+
+            @Override
+            public void init_uz() {
+                LocaleHelper.onAttach(getApplicationContext(), "uz");
+                LocaleHelper.onAttach(getActivi(), "uz");
+                initLanguage();
+            }
+
+            @Override
+            public void init_en() {
+                LocaleHelper.onAttach(getApplicationContext(), "en");
+                LocaleHelper.onAttach(getActivi(), "en");
+                initLanguage();
+            }
+        };
+    }
+
+    private void nawUp(){
+        int cur = navController.getCurrentDestination().getId();
+
+        while (R.id.nav_home != cur){
+            navController.popBackStack();
+            cur = navController.getCurrentDestination().getId();
+        }
     }
 
     public MobileNavigation getNavigation() {
         return navigation;
+    }
+
+    public InitializationLanguage getInitializationLanguage() {
+        return initializationLanguage;
     }
 }

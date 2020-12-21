@@ -14,7 +14,7 @@
         android:background="@color/color_img_fon">
 
         <ImageView
-            android:id="@+id/img_item_list_arrow"
+            android:id="@+id/img_item_list"
             android:layout_width="@dimen/img_width"
             android:layout_height="@dimen/img_height"
             android:adjustViewBounds="true"
@@ -29,7 +29,7 @@
         android:background="@color/color_text_fon">
 
         <TextView
-            android:id="@+id/text_item_list_arrow"
+            android:id="@+id/text_item_list"
             android:inputType="textMultiLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

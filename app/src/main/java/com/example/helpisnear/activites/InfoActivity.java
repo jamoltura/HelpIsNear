@@ -1,4 +1,4 @@
-package com.example.helpisnear;
+package com.example.helpisnear.activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,10 +21,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SearchView;
 
+import com.example.helpisnear.R;
 import com.example.helpisnear.classes.DialogCall;
+import com.example.helpisnear.classes.LocaleHelper;
 import com.example.helpisnear.classes.MyDrawerLayout;
 import com.example.helpisnear.model.HomeViewModel;
 import com.example.helpisnear.ui.info.InfoFragment;
+import com.example.helpisnear.ui.info.SetCallBtnFragment;
+import com.example.helpisnear.ui.info.SettingLangFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class InfoActivity extends AppCompatActivity {
@@ -33,18 +37,26 @@ public class InfoActivity extends AppCompatActivity {
 
     private HomeViewModel mViewModel;
 
-    private AppBarConfiguration mAppBarConfiguration;
+
     private MyDrawerLayout drawer;
-    private NavController navController;
     private NavigationView navigationView;
     private SearchView searchView;
 
     private InfoFragment infoFragment;
+    private SettingLangFragment settingLangFragment;
+    private SetCallBtnFragment setCallBtnFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String lang = LocaleHelper.getLanguage(getApplicationContext());
+        LocaleHelper.onAttach(this, lang);
+
         setContentView(R.layout.activity_info);
+
+        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+        mViewModel.init(getApplicationContext());
 
         Toolbar toolbar = findViewById(R.id.toolbar_info);
         setSupportActionBar(toolbar);
@@ -106,17 +118,38 @@ public class InfoActivity extends AppCompatActivity {
         });
 
         String action = getIntent().getStringExtra("type_info");
+        String position = getIntent().getStringExtra("position");
 
+        if (action.equals("WhatToDo") || action.equals("FirstAid") || action.equals("Encyclopedia") || action.equals("InfAndSettings")){
 
-        if (action.equals("WhatToDo")){
+            Bundle bundle = new Bundle();
+            bundle.putString("type_info", action);
+            bundle.putString("position", position);
+
             infoFragment = new InfoFragment();
+
+            infoFragment.setArguments(bundle);
+
             getSupportFragmentManager()
                     .beginTransaction()
                     .add(R.id.fragment_container, infoFragment)
                     .commit();
-        }
+        }else if (action.equals("SettingsLang")){
 
-        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-        mViewModel.init(getApplicationContext());
+            settingLangFragment = new SettingLangFragment();
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, settingLangFragment)
+                    .commit();
+        }else if (action.equals("SetCallBtn")){
+
+            setCallBtnFragment = new SetCallBtnFragment();
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, setCallBtnFragment)
+                    .commit();
+        }
     }
 }

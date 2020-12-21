@@ -1,8 +1,10 @@
 package com.example.helpisnear.ui.info;
 
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.opengl.Visibility;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,12 +15,14 @@ import androidx.lifecycle.ViewModelProviders;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.example.helpisnear.R;
 import com.example.helpisnear.classes.SliderAdapterExample;
 import com.example.helpisnear.classes.SliderBuilder;
 import com.example.helpisnear.classes.UnitMchsResource;
 import com.example.helpisnear.classes.UnitResource;
+import com.example.helpisnear.enums.TypeResourse;
 import com.example.helpisnear.model.HomeViewModel;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.smarteist.autoimageslider.SliderView;
@@ -28,6 +32,7 @@ import java.util.ArrayList;
 
 public class InfoFragment extends Fragment {
 
+    private RelativeLayout rl;
     private SliderView sliderView;
     private SliderBuilder sliderBuilder;
     private PDFView pdfView;
@@ -44,11 +49,8 @@ public class InfoFragment extends Fragment {
         View v = inflater.inflate(R.layout.info_fragment, container, false);
 
         sliderView = v.findViewById(R.id.imageSlider);
+        rl = v.findViewById(R.id.rl);
         pdfView = (PDFView) v.findViewById(R.id.pdfView);
-
-        String position = getActivity().getIntent().getStringExtra("position");
-
-        setIndex(Integer.parseInt(position));
 
         return v;
     }
@@ -57,21 +59,116 @@ public class InfoFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
+        String action = this.getArguments().getString("type_info");
+        String position = this.getArguments().getString("position");
 
+        setIndex(Integer.parseInt(position));
+
+        switch (action){
+            case "WhatToDo": init_WhatToDo();
+                break;
+            case "FirstAid": init_FirstAid();
+                break;
+            case "Encyclopedia" : init_Encyclopedia();
+                break;
+            case "InfAndSettings" : init_InformationAndSettingsFragment();
+        }
+    }
+
+    private void init_WhatToDo(){
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
         mViewModel.getDataMchs_WhatToDo().observe(getViewLifecycleOwner(), new Observer<ArrayList<UnitMchsResource>>() {
             @Override
             public void onChanged(ArrayList<UnitMchsResource> unitMchsResources) {
                 UnitMchsResource resource = unitMchsResources.get(getIndex());
                 ArrayList<UnitResource> list = resource.getPngFiles();
 
+                if (resource.getTypeResourse() == TypeResourse.ONLY_PDF){
+                    rl.setVisibility(View.GONE);
+                }else {
+                    SliderAdapterExample adapter = new SliderAdapterExample();
+                    sliderBuilder = new SliderBuilder(sliderView, adapter);
+                    sliderBuilder.setResource(getResources(), list);
+                    sliderBuilder.build();
+                }
+                if (resource.getPdfFile().isExists()){
+                    File file = new File(resource.getPdfFile().getLocalAdress());
+                    pdfView.fromFile(file).load();
+                }else {
+                    pdfView.fromStream(getResources().openRawResource(R.raw.default_pdf)).load();
+                }
+            }
+        });
+    }
 
+    private void init_FirstAid(){
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
+        mViewModel.getDataMchs_FirstAid().observe(getViewLifecycleOwner(), new Observer<ArrayList<UnitMchsResource>>() {
+            @Override
+            public void onChanged(ArrayList<UnitMchsResource> unitMchsResources) {
+                UnitMchsResource resource = unitMchsResources.get(getIndex());
+                ArrayList<UnitResource> list = resource.getPngFiles();
 
-                SliderAdapterExample adapter = new SliderAdapterExample();
-                sliderBuilder = new SliderBuilder(sliderView, adapter);
-                sliderBuilder.setResource(getResources(), list);
-                sliderBuilder.build();
+                if (resource.getTypeResourse() == TypeResourse.ONLY_PDF){
+                    rl.setVisibility(View.GONE);
+                }else {
+                    SliderAdapterExample adapter = new SliderAdapterExample();
+                    sliderBuilder = new SliderBuilder(sliderView, adapter);
+                    sliderBuilder.setResource(getResources(), list);
+                    sliderBuilder.build();
+                }
+                if (resource.getPdfFile().isExists()){
+                    File file = new File(resource.getPdfFile().getLocalAdress());
+                    pdfView.fromFile(file).load();
+                }else {
+                    pdfView.fromStream(getResources().openRawResource(R.raw.default_pdf)).load();
+                }
+            }
+        });
+    }
 
+    private void init_Encyclopedia(){
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
+        mViewModel.getDataMchs_Encyclopedia().observe(getViewLifecycleOwner(), new Observer<ArrayList<UnitMchsResource>>() {
+            @Override
+            public void onChanged(ArrayList<UnitMchsResource> unitMchsResources) {
+                UnitMchsResource resource = unitMchsResources.get(getIndex());
+                ArrayList<UnitResource> list = resource.getPngFiles();
+
+                if (resource.getTypeResourse() == TypeResourse.ONLY_PDF){
+                    rl.setVisibility(View.GONE);
+                }else {
+                    SliderAdapterExample adapter = new SliderAdapterExample();
+                    sliderBuilder = new SliderBuilder(sliderView, adapter);
+                    sliderBuilder.setResource(getResources(), list);
+                    sliderBuilder.build();
+                }
+                if (resource.getPdfFile().isExists()){
+                    File file = new File(resource.getPdfFile().getLocalAdress());
+                    pdfView.fromFile(file).load();
+                }else {
+                    pdfView.fromStream(getResources().openRawResource(R.raw.default_pdf)).load();
+                }
+            }
+        });
+    }
+
+    private void init_InformationAndSettingsFragment(){
+        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
+        mViewModel.getDataMchs_InformationAndSettings().observe(getViewLifecycleOwner(), new Observer<ArrayList<UnitMchsResource>>() {
+            @Override
+            public void onChanged(ArrayList<UnitMchsResource> unitMchsResources) {
+                UnitMchsResource resource = unitMchsResources.get(getIndex());
+                ArrayList<UnitResource> list = resource.getPngFiles();
+
+                if (resource.getTypeResourse() == TypeResourse.ONLY_PDF){
+                    rl.setVisibility(View.GONE);
+                }else {
+                    SliderAdapterExample adapter = new SliderAdapterExample();
+                    sliderBuilder = new SliderBuilder(sliderView, adapter);
+                    sliderBuilder.setResource(getResources(), list);
+                    sliderBuilder.build();
+                }
                 if (resource.getPdfFile().isExists()){
                     File file = new File(resource.getPdfFile().getLocalAdress());
                     pdfView.fromFile(file).load();

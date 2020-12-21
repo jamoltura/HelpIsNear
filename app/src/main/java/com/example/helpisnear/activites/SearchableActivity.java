@@ -1,4 +1,4 @@
-package com.example.helpisnear;
+package com.example.helpisnear.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.helpisnear.R;
+import com.example.helpisnear.classes.LocaleHelper;
+
 public class SearchableActivity extends AppCompatActivity {
 
     private static final String TAG = "myLogs";
@@ -14,6 +17,10 @@ public class SearchableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String lang = LocaleHelper.getLanguage(getApplicationContext());
+        LocaleHelper.onAttach(this, lang);
+
         setContentView(R.layout.activity_searchable);
 
         Intent intent = getIntent();

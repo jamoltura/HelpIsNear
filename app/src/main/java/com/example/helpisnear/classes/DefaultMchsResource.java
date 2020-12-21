@@ -123,7 +123,7 @@ public class DefaultMchsResource {
         list.add(unitMchsResource);
         temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Признаки_возникновения_биологической_угрозы.pdf";
         initAdress = "https://yadi.sk/i/ylRoPkWLPLCNKQ";
 
@@ -180,44 +180,25 @@ public class DefaultMchsResource {
     private ArrayList<UnitMchsResource> init_InformationAndSettings_RU(){
         ArrayList<UnitMchsResource> list = new ArrayList<>();
 
-        TypeResourse typeResourse = TypeResourse.PDF_PNG;
+        TypeResourse typeResourse = TypeResourse.ONLY_PDF;
         String namePdf = "Признаки_возникновения_биологической_угрозы.pdf";
         String initAdress = "https://yadi.sk/i/ylRoPkWLPLCNKQ";
 
         UnitResource unitResource = new UnitResource(namePdf, initAdress);
 
-        ArrayList<UnitResource> temp = new ArrayList<>();
-        String namePng = "img1_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img2_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img3_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/JlXAzgfgPZb7WQ";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
 
         list.add(unitMchsResource);
-        temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Признаки_возникновения_биологической_угрозы.pdf";
         initAdress = "https://yadi.sk/i/ylRoPkWLPLCNKQ";
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        temp = new ArrayList<>();
-        namePng = "img4_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
         list.add(unitMchsResource);
-        temp.clear();
 
         return list;
     }
@@ -258,7 +239,16 @@ public class DefaultMchsResource {
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
+        temp = new ArrayList<>();
+        namePng = "img4_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        namePng = "img5_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
         list.add(unitMchsResource);
         temp.clear();
 
@@ -292,7 +282,7 @@ public class DefaultMchsResource {
         list.add(unitMchsResource);
         temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Signs_of_a_biological_threat.pdf";
         initAdress = "https://yadi.sk/i/8gkMfKRd8zQZUw";
 
@@ -349,44 +339,24 @@ public class DefaultMchsResource {
     private ArrayList<UnitMchsResource> init_InformationAndSettings_EN(){
         ArrayList<UnitMchsResource> list = new ArrayList<>();
 
-        TypeResourse typeResourse = TypeResourse.PDF_PNG;
+        TypeResourse typeResourse = TypeResourse.ONLY_PDF;
         String namePdf = "Signs_of_a_biological_threat.pdf";
         String initAdress = "https://yadi.sk/i/8gkMfKRd8zQZUw";
 
         UnitResource unitResource = new UnitResource(namePdf, initAdress);
 
-        ArrayList<UnitResource> temp = new ArrayList<>();
-        String namePng = "img1_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img2_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img3_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/JlXAzgfgPZb7WQ";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
 
         list.add(unitMchsResource);
-        temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Signs_of_a_biological_threat.pdf";
         initAdress = "https://yadi.sk/i/8gkMfKRd8zQZUw";
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        temp = new ArrayList<>();
-        namePng = "img4_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
         list.add(unitMchsResource);
-        temp.clear();
 
         return list;
     }
@@ -427,7 +397,16 @@ public class DefaultMchsResource {
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
+        temp = new ArrayList<>();
+        namePng = "img4_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        namePng = "img5_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
         list.add(unitMchsResource);
         temp.clear();
 
@@ -461,7 +440,7 @@ public class DefaultMchsResource {
         list.add(unitMchsResource);
         temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Biologik_tahdidning_alomatlari.pdf";
         initAdress = "https://yadi.sk/i/iNztyjXa05JiAQ";
 
@@ -518,44 +497,24 @@ public class DefaultMchsResource {
     private ArrayList<UnitMchsResource> init_InformationAndSettings_UZ_LT(){
         ArrayList<UnitMchsResource> list = new ArrayList<>();
 
-        TypeResourse typeResourse = TypeResourse.PDF_PNG;
+        TypeResourse typeResourse = TypeResourse.ONLY_PDF;
         String namePdf = "Biologik_tahdidning_alomatlari.pdf";
         String initAdress = "https://yadi.sk/i/iNztyjXa05JiAQ";
 
         UnitResource unitResource = new UnitResource(namePdf, initAdress);
 
-        ArrayList<UnitResource> temp = new ArrayList<>();
-        String namePng = "img1_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img2_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img3_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/JlXAzgfgPZb7WQ";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
 
         list.add(unitMchsResource);
-        temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Biologik_tahdidning_alomatlari.pdf";
         initAdress = "https://yadi.sk/i/iNztyjXa05JiAQ";
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        temp = new ArrayList<>();
-        namePng = "img4_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
         list.add(unitMchsResource);
-        temp.clear();
 
         return list;
     }
@@ -596,7 +555,16 @@ public class DefaultMchsResource {
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
+        temp = new ArrayList<>();
+        namePng = "img4_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        namePng = "img5_WhatToDo.png";
+        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
+        temp.add(new UnitResource(namePng, initAdress));
+
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
         list.add(unitMchsResource);
         temp.clear();
 
@@ -630,7 +598,7 @@ public class DefaultMchsResource {
         list.add(unitMchsResource);
         temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Биологик_тахдиднинг_аломати.pdf";
         initAdress = "https://yadi.sk/i/6VeNdDMH38L1aw";
 
@@ -687,44 +655,24 @@ public class DefaultMchsResource {
     private ArrayList<UnitMchsResource> init_InformationAndSettings_UZ_KR(){
         ArrayList<UnitMchsResource> list = new ArrayList<>();
 
-        TypeResourse typeResourse = TypeResourse.PDF_PNG;
+        TypeResourse typeResourse = TypeResourse.ONLY_PDF;
         String namePdf = "Биологик_тахдиднинг_аломати.pdf";
         String initAdress = "https://yadi.sk/i/6VeNdDMH38L1aw";
 
         UnitResource unitResource = new UnitResource(namePdf, initAdress);
 
-        ArrayList<UnitResource> temp = new ArrayList<>();
-        String namePng = "img1_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img2_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/-__qamnG8_RByA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        namePng = "img3_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/JlXAzgfgPZb7WQ";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        UnitMchsResource unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
 
         list.add(unitMchsResource);
-        temp.clear();
 
-        typeResourse = TypeResourse.PDF_PNG;
+        typeResourse = TypeResourse.ONLY_PDF;
         namePdf = "Биологик_тахдиднинг_аломати.pdf";
         initAdress = "https://yadi.sk/i/6VeNdDMH38L1aw";
 
         unitResource = new UnitResource(namePdf, initAdress);
 
-        temp = new ArrayList<>();
-        namePng = "img4_WhatToDo.png";
-        initAdress = "https://yadi.sk/i/Lkn3E8uPwu-1lA";
-        temp.add(new UnitResource(namePng, initAdress));
-
-        unitMchsResource = new UnitMchsResource(typeResourse, unitResource, temp);
+        unitMchsResource = new UnitMchsResource(typeResourse, unitResource);
         list.add(unitMchsResource);
-        temp.clear();
 
         return list;
     }
