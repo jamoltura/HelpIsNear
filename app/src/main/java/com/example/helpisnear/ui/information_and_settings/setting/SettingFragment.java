@@ -45,8 +45,6 @@ public class SettingFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.setting_fragment, container, false);
 
-        MobileNavigation navigation = ((MainActivity) getActivity()).getNavigation();
-
         recyclerView = v.findViewById(R.id.recycler_setting);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener(){
@@ -80,12 +78,8 @@ public class SettingFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
-        adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getSettingsLangResource());
-
-        recyclerView.setAdapter(adapter);
+        initRecycle();
     }
 
     @Override
@@ -115,18 +109,22 @@ public class SettingFragment extends Fragment {
                         break;
                     case 6 : navigation.stranger_information_and_settings();
                         break;
-                    case 7 : language.init_ru();
+                    case 7 :
+                        language.init_ru();
+                        initRecycle();
                         break;
-                    case 8 : language.init_default();
+                    case 8 :
+                        language.init_default();
+                        initRecycle();
                         break;
-                    case 9 : language.init_uz();
+                    case 9 :
+                        language.init_uz();
+                        initRecycle();
                         break;
-                    case 10 : language.init_en();
+                    case 10 :
+                        language.init_en();
+                        initRecycle();
                 }
-
-                adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getSettingsLangResource());
-
-                recyclerView.setAdapter(adapter);
             }
         }else if (requestCode == SETCALLBTN_ACTIVITY){
             if (resultCode == Activity.RESULT_OK) {
@@ -152,5 +150,10 @@ public class SettingFragment extends Fragment {
                 }
             }
         }
+    }
+
+    private void initRecycle(){
+        adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getSettingsLangResource());
+        recyclerView.setAdapter(adapter);
     }
 }

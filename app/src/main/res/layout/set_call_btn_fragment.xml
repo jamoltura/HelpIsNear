@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.info.SetCallBtnFragment">
+    tools:context=".ui_info.info.SetCallBtnFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

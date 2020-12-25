@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 
 import com.example.helpisnear.MainActivity;
 import com.example.helpisnear.R;
-import com.example.helpisnear.activites.InfoActivity;
+import com.example.helpisnear.activites.FirstAidYesNoActivity;
 import com.example.helpisnear.adapters.MyListAdapter;
 import com.example.helpisnear.classes.ListResource;
 import com.example.helpisnear.interfaces.MobileNavigation;
@@ -40,14 +40,14 @@ public class FirstAidFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.first_aid_fragment, container, false);
+        View view = inflater.inflate(R.layout.first_aid_fragment, container, false);
 
-        recyclerView = v.findViewById(R.id.recycler_first_aid);
+        recyclerView = view.findViewById(R.id.recycler_first_aid);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Intent intent = new Intent(getContext(), InfoActivity.class);
+                Intent intent = new Intent(getContext(), FirstAidYesNoActivity.class);
                 intent.putExtra("type_info", "FirstAid");
                 intent.putExtra("position", String.valueOf(position));
                 startActivityForResult(intent, LAUNCH_ACTIVITY);
@@ -59,17 +59,13 @@ public class FirstAidFragment extends Fragment {
             }
         }));
 
-        return v;
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
         adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getFirstAidResource());
-
         recyclerView.setAdapter(adapter);
     }
 
@@ -99,11 +95,7 @@ public class FirstAidFragment extends Fragment {
                         break;
                     case 6 : navigation.stranger_information_and_settings();
                 }
-
-            }else if (resultCode == Activity.RESULT_CANCELED){
-
             }
         }
     }
-
 }

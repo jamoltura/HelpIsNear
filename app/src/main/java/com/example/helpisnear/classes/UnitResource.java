@@ -4,11 +4,13 @@ import android.content.Context;
 
 import java.io.File;
 import com.example.helpisnear.R;
+import com.example.helpisnear.enums.TypeFile;
 
 public class UnitResource {
 
     private final String DOWNLOAD_SERVICE = "https://getfile.dokpub.com/yandex/get/";
 
+    private final TypeFile typeFile;
     private final String fileName;
     private final String inetAdress;
     private String localAdress;
@@ -16,7 +18,8 @@ public class UnitResource {
     private boolean exists;
 
 
-    public UnitResource(String fileName, String inetAdress) {
+    public UnitResource(TypeFile typeFile, String fileName, String inetAdress) {
+        this.typeFile = typeFile;
         this.fileName = fileName;
         this.inetAdress = DOWNLOAD_SERVICE + inetAdress;
         setLocalAdress("");
@@ -53,5 +56,9 @@ public class UnitResource {
 
     public void setExists(boolean exists) {
         this.exists = exists;
+    }
+
+    public TypeFile getTypeFile() {
+        return typeFile;
     }
 }

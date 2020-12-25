@@ -24,7 +24,6 @@ public class MapOfAdverseEventsFragment extends Fragment {
 
     private static final String TAG = "myLogs";
 
-
     private int LAUNCH_ACTIVITY= 1;
 
     public static MapOfAdverseEventsFragment newInstance() {
@@ -34,13 +33,17 @@ public class MapOfAdverseEventsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.map_of_adverse_events_fragment, container, false);
+        View view = inflater.inflate(R.layout.map_of_adverse_events_fragment, container, false);
+
+
+
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
+
         // TODO: Use the ViewModel
     }
 
@@ -70,11 +73,7 @@ public class MapOfAdverseEventsFragment extends Fragment {
                         break;
                     case 6 : navigation.stranger_information_and_settings();
                 }
-
-            }else if (resultCode == Activity.RESULT_CANCELED){
-
             }
         }
     }
-
 }

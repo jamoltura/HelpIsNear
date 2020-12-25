@@ -32,6 +32,14 @@ public class FileManager {
         init();
     }
 
+    public static String getFilesPdfPath(Context context){
+        return context.getFilesDir().getAbsolutePath() + "/FilesPdf";
+    }
+
+    public static String getFilesPngPath(Context context){
+        return context.getFilesDir().getAbsolutePath() + "/FilesPng";
+    }
+
     private void init(){
 
         pathFilesPdf = _addDirectory(getPathApp() + getDirFilesPdf());

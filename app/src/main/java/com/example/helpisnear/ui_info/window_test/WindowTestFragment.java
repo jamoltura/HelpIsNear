@@ -1,4 +1,4 @@
-package com.example.helpisnear.ui.info;
+package com.example.helpisnear.ui_info.window_test;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -16,22 +16,22 @@ import android.view.ViewGroup;
 import com.example.helpisnear.R;
 import com.example.helpisnear.model.HomeViewModel;
 
-public class SetCallBtnFragment extends Fragment {
+public class WindowTestFragment extends Fragment {
 
     private HomeViewModel mViewModel;
 
-    public static SetCallBtnFragment newInstance() {
-        return new SetCallBtnFragment();
+    public static WindowTestFragment newInstance() {
+        return new WindowTestFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.set_call_btn_fragment, container, false);
+        View view = inflater.inflate(R.layout.window_test_fragment, container, false);
 
 
 
-        return v;
+        return view;
     }
 
     @Override
@@ -39,7 +39,6 @@ public class SetCallBtnFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-
 
         // TODO: Use the ViewModel
     }

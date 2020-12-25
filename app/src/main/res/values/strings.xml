@@ -4,6 +4,7 @@
 
     <!--  menu   -->
     <string name="menu_home">Асосий меню</string>
+    <string name="menu_update">Янгиланг</string>
     <string name="menu_what_to_do">Нима килиш керак?</string>
     <string name="menu_first_aid">Биринчи ёрдам</string>
     <string name="menu_map_of_adverse_events">Нокулай ходисалар харитаси</string>
@@ -42,6 +43,16 @@
     <string name="radiobtn_2_set_call_btn">Олдиндан урнатилган ракамга кунгирок килинг</string>
     <string name="radiobtn_3_set_call_btn">Олдиндан урнатилган ракамга СМС юборинг</string>
     <string name="radiobtn_4_set_call_btn">ФВВга кунгирок килиш</string>
+
+    <!--   first_aid_yes_no fragment    -->
+    <string name="first_aid_yes_no_body_1_text">Вокеа жойини текширинг.</string>
+    <string name="first_aid_yes_no_body_2_text">Сиз хавф остида колдингизми?</string>
+
+    <string name="first_aid_yes_no_btn_yes">Ха</string>
+    <string name="first_aid_yes_no_btn_no">Йук</string>
+
+    <!--  first_aid_yes fragment    -->
+    <string name="first_aid_yes_body_1_text">Хеч нарса килманг, ихтисослашган хизматга кунгирок килинг.</string>
 
     <!--  what_to_do   elements  -->
     <string name="what_to_do_element_1">Кимёвий хавфли моддалар билан бахтсиз ходиса</string>
@@ -160,5 +171,73 @@
     <string name="settings_element_1">Тил</string>
     <string name="settings_element_2">Фавкулотда вазият тугмачасини созлаш</string>
 
+    <!--  check your self  header  elements  -->
+    <string name="text_count_test"> саволлар</string>
+    <string name="btn_start_test">Аввал синовдан утинг</string>
+
+    <!--  check your self  history  elements  -->
+    <string name="text_time_history">Синов муваффакиятли утди:</string>
+    <string name="text_percent_history">Натижа:</string>
+    <string name="text_coment_history">Натижада шарх:</string>
+    <string name="text_non_ans_history">Жавоб берилмаган саволлар:</string>
+    <string name="text_true_ans_history">Тугри жавоблар:</string>
+    <string name="text_false_ans_history">Нотугри жавоблар:</string>
+    <string name="text_time_span_ans_history">Сарфланган вакт:</string>
+
+    <!--   window elemts       -->
+    <string name="btn_window_preed">Оркага</string>
+    <string name="btn_window_next">Кейингиси</string>
+
+    <!--   test     -->
+    <!--    1   -->
+    <string name="question_0_0">Стресс нима?</string>
+    <string name="answer_a_0_0">Инсонни шоду-хуррамликка туширувчи ҳолат.</string>
+    <string name="answer_b_0_0">Ҳайвон ва инсон организмида турли нохуш омиллар (стрессорлар) таъсирига жавобан юзага келувчи физиологик ҳимоя реакциялари мажмуи.</string>
+    <string name="answer_c_0_0">Хавф-хатарни сезиш, хавфсираш ҳолати.</string>
+    <string name="answer_d_0_0">Назоратдан чиқиб кетган қўрқув.</string>
+    <string name="is_answer_a_0_0">0</string>
+    <string name="is_answer_b_0_0">1</string>
+    <string name="is_answer_c_0_0">0</string>
+    <string name="is_answer_d_0_0">0</string>
+
+    <string name="question_1_0">Стресс нима?</string>
+    <string name="answer_a_1_0">Инсонни шоду-хуррамликка туширувчи ҳолат.</string>
+    <string name="answer_b_1_0">Ҳайвон ва инсон организмида турли нохуш омиллар (стрессорлар) таъсирига жавобан юзага келувчи физиологик ҳимоя реакциялари мажмуи.</string>
+    <string name="answer_c_1_0">Хавф-хатарни сезиш, хавфсираш ҳолати.</string>
+    <string name="answer_d_1_0">Назоратдан чиқиб кетган қўрқув.</string>
+    <string name="is_answer_a_1_0">0</string>
+    <string name="is_answer_b_1_0">1</string>
+    <string name="is_answer_c_1_0">1</string>
+    <string name="is_answer_d_1_0">0</string>
+
+    <string name="question_2_0">Стресс нима?</string>
+    <string name="answer_a_2_0">Инсонни шоду-хуррамликка туширувчи ҳолат.</string>
+    <string name="answer_b_2_0">Ҳайвон ва инсон организмида турли нохуш омиллар (стрессорлар) таъсирига жавобан юзага келувчи физиологик ҳимоя реакциялари мажмуи.</string>
+    <string name="answer_c_2_0">Хавф-хатарни сезиш, хавфсираш ҳолати.</string>
+    <string name="answer_d_2_0">Назоратдан чиқиб кетган қўрқув.</string>
+    <string name="is_answer_a_2_0">0</string>
+    <string name="is_answer_b_2_0">0</string>
+    <string name="is_answer_c_2_0">1</string>
+    <string name="is_answer_d_2_0">1</string>
+
+    <string name="question_3_0">Стресс нима?</string>
+    <string name="answer_a_3_0">Инсонни шоду-хуррамликка туширувчи ҳолат.</string>
+    <string name="answer_b_3_0">Ҳайвон ва инсон организмида турли нохуш омиллар (стрессорлар) таъсирига жавобан юзага келувчи физиологик ҳимоя реакциялари мажмуи.</string>
+    <string name="answer_c_3_0">Хавф-хатарни сезиш, хавфсираш ҳолати.</string>
+    <string name="answer_d_3_0">Назоратдан чиқиб кетган қўрқув.</string>
+    <string name="is_answer_a_3_0">1</string>
+    <string name="is_answer_b_3_0">0</string>
+    <string name="is_answer_c_3_0">0</string>
+    <string name="is_answer_d_3_0">1</string>
+
+    <string name="question_4_0">Стресс нима?</string>
+    <string name="answer_a_4_0">Инсонни шоду-хуррамликка туширувчи ҳолат.</string>
+    <string name="answer_b_4_0">Ҳайвон ва инсон организмида турли нохуш омиллар (стрессорлар) таъсирига жавобан юзага келувчи физиологик ҳимоя реакциялари мажмуи.</string>
+    <string name="answer_c_4_0">Хавф-хатарни сезиш, хавфсираш ҳолати.</string>
+    <string name="answer_d_4_0">Назоратдан чиқиб кетган қўрқув.</string>
+    <string name="is_answer_a_4_0">1</string>
+    <string name="is_answer_b_4_0">1</string>
+    <string name="is_answer_c_4_0">0</string>
+    <string name="is_answer_d_4_0">1</string>
 
 </resources>

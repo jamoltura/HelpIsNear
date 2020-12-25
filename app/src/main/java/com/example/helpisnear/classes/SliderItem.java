@@ -24,7 +24,7 @@ public class SliderItem {
         if (!path.isEmpty()) {
             return BitmapFactory.decodeFile(path);
         }else {
-            return BitmapFactory.decodeResource(res, R.drawable.mchs);
+            return BitmapFactory.decodeResource(res, R.drawable.no_image);
         }
     }
 

@@ -32,7 +32,7 @@ public class MchsResource {
         listPngFileName = fileManager.getListFilesPng();
 
         defaultMchsResource = new DefaultMchsResource(getlanguage(context));
-
+        MyDownload.getInstanse().getList().clear();
     }
 
     public ArrayList<UnitMchsResource> getMchsResources_WhatToDo(){
@@ -43,7 +43,10 @@ public class MchsResource {
 
         if (count > 0){
             for (int i = 0; i < count; i++){
-                builder(list.get(i));
+                builderPdf(list.get(i).getPdfFile(), PdfFileName);
+                if (list.get(i).getTypeResourse() == TypeResourse.PDF_PNG) {
+                    builderPng(list.get(i).getPngFiles(), PngFileName);
+                }
             }
         }
 
@@ -58,7 +61,10 @@ public class MchsResource {
 
         if (count > 0){
             for (int i = 0; i < count; i++){
-                builder(list.get(i));
+                builderPdf(list.get(i).getPdfFile(), PdfFileName);
+                if (list.get(i).getTypeResourse() == TypeResourse.PDF_PNG) {
+                    builderPng(list.get(i).getPngFiles(), PngFileName);
+                }
             }
         }
 
@@ -73,7 +79,10 @@ public class MchsResource {
 
         if (count > 0){
             for (int i = 0; i < count; i++){
-                builder(list.get(i));
+                builderPdf(list.get(i).getPdfFile(), PdfFileName);
+                if (list.get(i).getTypeResourse() == TypeResourse.PDF_PNG) {
+                    builderPng(list.get(i).getPngFiles(), PngFileName);
+                }
             }
         }
 
@@ -88,69 +97,74 @@ public class MchsResource {
 
         if (count > 0){
             for (int i = 0; i < count; i++){
-                builder(list.get(i));
+                builderPdf(list.get(i).getPdfFile(), PdfFileName);
+                if (list.get(i).getTypeResourse() == TypeResourse.PDF_PNG) {
+                    builderPng(list.get(i).getPngFiles(), PngFileName);
+                }
             }
         }
 
         return list;
     }
 
-    private void builder(UnitMchsResource resource){
-        builderPdf(resource, PdfFileName);
-        if (resource.getTypeResourse() == TypeResourse.PDF_PNG) {
-            builderPng(resource, PngFileName);
-        }
-    }
-
-    private void builderPdf(UnitMchsResource resource, ArrayList<String> list){
+    private void builderPdf(UnitResource resource, ArrayList<String> list){
         int count = list.size();
 
         if (count > 0){
+
             for (int i = 0; i < count; i++){
                 String name = list.get(i);
-                if (resource.getPdfFile().getFileName().equals(name)){
+                if (resource.getFileName().equals(name)){
                     String path = listPdfFileName.get(i);
                     File file = new File(path);
-                    resource.getPdfFile().setFile(file);
-                    resource.getPdfFile().setExists(true);
+
+                    if (file.exists()) {
+                        resource.setFile(file);
+                        resource.setLocalAdress(file.getAbsolutePath());
+                        resource.setExists(true);
+                    }
                     break;
                 }
             }
         }
-        if (!resource.getPdfFile().isExists()){
-            MyDownload myDownload = MyDownload.getInstanse();
-            myDownload.add(resource.getPdfFile());
+        if (!resource.isExists()){
+            MyDownload.getInstanse().add(resource);
         }
     }
 
-    private void builderPng(UnitMchsResource resource, ArrayList<String> list){
+    private void builderPng(ArrayList<UnitResource> resource, ArrayList<String> list){
         int count = list.size();
-        int countPng = resource.getPngFiles().size();
-
-        boolean file_exists = false;
+        int countPng = resource.size();
 
         if (count > 0){
+
             for (int i = 0; i < count; i++){
+
                 String name = list.get(i);
+
+                int countPngSuccess = 0;
                 for (int j = 0; j < countPng; j++) {
-                    if (resource.getPngFiles().get(j).getFileName().equals(name)) {
+                    if (resource.get(j).getFileName().equals(name)) {
+                        countPngSuccess++;
                         String path = listPngFileName.get(i);
                         File file = new File(path);
-                        file_exists = file.exists();
-                        resource.getPngFiles().get(j).setFile(file);
-                        resource.getPngFiles().get(j).setExists(true);
-                        break;
+
+                        if (file.exists()) {
+                            resource.get(j).setFile(file);
+                            resource.get(j).setLocalAdress(file.getAbsolutePath());
+                            resource.get(j).setExists(true);
+                        }
                     }
                 }
-                if (file_exists){
+                if (countPngSuccess == countPng){
                     break;
                 }
             }
         }
         MyDownload myDownload = MyDownload.getInstanse();
         for (int i = 0; i < countPng; i++){
-            if (!resource.getPngFiles().get(i).isExists()){
-                myDownload.add(resource.getPngFiles().get(i));
+            if (!resource.get(i).isExists()){
+                myDownload.add(resource.get(i));
             }
         }
     }

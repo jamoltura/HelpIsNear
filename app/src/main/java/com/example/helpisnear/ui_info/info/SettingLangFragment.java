@@ -1,6 +1,4 @@
-package com.example.helpisnear.ui.info;
-
-import androidx.lifecycle.ViewModelProvider;
+package com.example.helpisnear.ui_info.info;
 
 import android.app.Activity;
 import android.content.Intent;

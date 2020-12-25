@@ -41,9 +41,9 @@ public class EncyclopediaFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.encyclopedia_fragment, container, false);
+        View view = inflater.inflate(R.layout.encyclopedia_fragment, container, false);
 
-        recyclerView = v.findViewById(R.id.recycler_encyclopedia);
+        recyclerView = view.findViewById(R.id.recycler_encyclopedia);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
@@ -60,17 +60,13 @@ public class EncyclopediaFragment extends Fragment {
             }
         }));
 
-        return v;
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
         adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getEncyclopediaResource());
-
         recyclerView.setAdapter(adapter);
     }
 
@@ -100,11 +96,7 @@ public class EncyclopediaFragment extends Fragment {
                         break;
                     case 6 : navigation.stranger_information_and_settings();
                 }
-
-            }else if (resultCode == Activity.RESULT_CANCELED){
-
             }
         }
     }
-
 }

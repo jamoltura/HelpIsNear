@@ -10,5 +10,5 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mchs" />
+        app:srcCompat="@drawable/no_image" />
 </FrameLayout>

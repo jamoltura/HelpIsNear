@@ -26,10 +26,8 @@ public class HomeFragment extends Fragment {
 
     private static final String TAG = "myLogs";
 
-    private SearchView searchView;
     private RecyclerView recyclerView;
     private MyListAdapter adapter;
-
 
     public static HomeFragment newInstance() {
         return new HomeFragment();
@@ -38,16 +36,16 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.home_fragment, container, false);
+        View view = inflater.inflate(R.layout.home_fragment, container, false);
 
-        MobileNavigation navigation = ((MainActivity) getActivity()).getNavigation();
-
-        recyclerView = v.findViewById(R.id.recycler_home);
+        recyclerView = view.findViewById(R.id.recycler_home);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener(){
 
             @Override
             public void onItemClick(View view, int position) {
+
+                MobileNavigation navigation = ((MainActivity) getActivity()).getNavigation();
 
                 switch (position){
                     case 0 : navigation.home_what_to_do();
@@ -69,17 +67,13 @@ public class HomeFragment extends Fragment {
 
             }
         }));
-        return v;
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
         adapter = new MyListAdapter(getContext(), R.layout.item_list, ListResource.getInstance().getHomeResource());
-
         recyclerView.setAdapter(adapter);
     }
 }

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui_info.check_your.CheckYourFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/body_test_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_quest_start"
+                        android:layout_width="@dimen/clock"
+                        android:layout_height="@dimen/clock"
+                        android:layout_marginEnd="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/question_pic" />
+
+                    <TextView
+                        android:id="@+id/text_count_test_start"
+                        style="@style/test_text_normal"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/text_count_test"/>
+
+                    <ImageView
+                        android:id="@+id/img_clock_start"
+                        android:layout_width="@dimen/clock"
+                        android:layout_height="@dimen/clock"
+                        android:layout_marginEnd="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/time_pic" />
+
+                    <TextView
+                        android:id="@+id/text_time_test_start"
+                        style="@style/test_text_normal"
+                        android:layout_marginEnd="10dp"
+                        android:text="TextView" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_start_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_start_test"
+                    android:layout_centerHorizontal="true"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_quest_continue"
+                        android:layout_width="@dimen/clock"
+                        android:layout_height="@dimen/clock"
+                        android:layout_marginEnd="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/question_pic"/>
+
+                    <TextView
+                        android:id="@+id/text_count_test_continue"
+                        style="@style/test_text_normal"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/text_count_test"/>
+
+                    <ImageView
+                        android:id="@+id/img_lock_continue"
+                        android:layout_width="@dimen/clock"
+                        android:layout_height="@dimen/clock"
+                        android:layout_marginEnd="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/time_pic" />
+
+                    <TextView
+                        android:id="@+id/text_time_test_continue"
+                        style="@style/test_text_normal"
+                        android:layout_marginEnd="10dp"
+                        android:text="TextView" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_time_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_time_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_percent_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_percent_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_coment_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_coment_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_non_ans_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_non_ans_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_true_ans_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_true_ans_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_false_ans_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_false_ans_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_time_span_ans_history"
+                    style="@style/test_text_normal"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_time_span_ans_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_start_test2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/btn_start_test"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_test_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

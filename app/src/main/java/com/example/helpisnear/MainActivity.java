@@ -1,12 +1,16 @@
 package com.example.helpisnear;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProviders;
@@ -17,14 +21,16 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.helpisnear.classes.DialogCall;
+import com.example.helpisnear.classes.DownloadManagerResolver;
 import com.example.helpisnear.classes.LocaleHelper;
+import com.example.helpisnear.classes.MyDownload;
 import com.example.helpisnear.classes.MyDrawerLayout;
 import com.example.helpisnear.interfaces.InitializationLanguage;
 import com.example.helpisnear.interfaces.MobileNavigation;
 import com.example.helpisnear.model.HomeViewModel;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyDownload.Callback{
 
     private static final String TAG = "myLogs";
 
@@ -47,30 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-       init();
-
-        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-       // mViewModel.init(getApplicationContext());
-    }
-
-    private MainActivity getActivi(){
-        return this;
-    }
-
-    private void initLanguage(){
-        navigationView.getMenu().clear();
-        navigationView.inflateMenu(R.menu.activity_main_drawer);
-
-        searchView.setQueryHint(getString(R.string.search_hint));
-
-        navController.getGraph().clear();
-        navController.setGraph(R.navigation.mobile_navigation);
-
-        getNavigation().home_information_and_settings();
-        getNavigation().information_and_settings_setting();
-    }
-
-    private void init(){
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -85,6 +67,19 @@ public class MainActivity extends AppCompatActivity {
         drawer = findViewById(R.id.drawer_layout);
 
         navigationView = findViewById(R.id.nav_view);
+
+        MenuItem item_update = navigationView.getMenu().findItem(R.id.update);
+        item_update.setOnMenuItemClickListener(item -> {
+            drawer.closeDrawers();
+
+            if (DownloadManagerResolver.resolve(getApplicationContext())) {
+                mViewModel.update(getApplicationContext());
+                MyDownload.getInstanse().registerCallBack(getActivi());
+                MyDownload.getInstanse().startDownload(getApplicationContext());
+            }
+
+            return true;
+        });
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home)
@@ -244,6 +239,26 @@ public class MainActivity extends AppCompatActivity {
                 initLanguage();
             }
         };
+
+        mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+        mViewModel.init(getApplicationContext());
+    }
+
+    private MainActivity getActivi(){
+        return this;
+    }
+
+    private void initLanguage(){
+        navigationView.getMenu().clear();
+        navigationView.inflateMenu(R.menu.activity_main_drawer);
+
+        searchView.setQueryHint(getString(R.string.search_hint));
+
+        navController.getGraph().clear();
+        navController.setGraph(R.navigation.mobile_navigation);
+
+        getNavigation().home_information_and_settings();
+        getNavigation().information_and_settings_setting();
     }
 
     private void nawUp(){
@@ -261,5 +276,10 @@ public class MainActivity extends AppCompatActivity {
 
     public InitializationLanguage getInitializationLanguage() {
         return initializationLanguage;
+    }
+
+    @Override
+    public void callingBack() {
+        mViewModel.update(getApplicationContext());
     }
 }

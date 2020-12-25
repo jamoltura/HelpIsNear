@@ -17,8 +17,11 @@ import android.view.ViewGroup;
 
 import com.example.helpisnear.MainActivity;
 import com.example.helpisnear.R;
+import com.example.helpisnear.activites.CheckYourSelfActivity;
+import com.example.helpisnear.activites.FirstAidYesNoActivity;
 import com.example.helpisnear.adapters.MyListAdapter;
 import com.example.helpisnear.classes.ListResource;
+import com.example.helpisnear.classes.RecyclerItemClickListener;
 import com.example.helpisnear.interfaces.MobileNavigation;
 import com.example.helpisnear.model.HomeViewModel;
 
@@ -39,22 +42,31 @@ public class CheckYourSelfFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.check_your_self_fragment, container, false);
+        View view = inflater.inflate(R.layout.check_your_self_fragment, container, false);
 
-        recyclerView = v.findViewById(R.id.recycler_check_your_self);
+        recyclerView = view.findViewById(R.id.recycler_check_your_self);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(getContext(), CheckYourSelfActivity.class);
+                intent.putExtra("position", String.valueOf(position));
+                intent.putExtra("header", getResources().getString(adapter.getItemHead(position)));
+                startActivityForResult(intent, LAUNCH_ACTIVITY);
+            }
 
-        return v;
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
         adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getCheckYourSelfResource());
-
         recyclerView.setAdapter(adapter);
     }
 
@@ -84,11 +96,7 @@ public class CheckYourSelfFragment extends Fragment {
                         break;
                     case 6 : navigation.stranger_information_and_settings();
                 }
-
-            }else if (resultCode == Activity.RESULT_CANCELED){
-
             }
         }
     }
-
 }

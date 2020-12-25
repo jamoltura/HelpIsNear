@@ -40,9 +40,9 @@ public class WhatToDoFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.what_to_do_fragment, container, false);
+        View view = inflater.inflate(R.layout.what_to_do_fragment, container, false);
 
-        recyclerView = v.findViewById(R.id.recycler_what_to_do);
+        recyclerView = view.findViewById(R.id.recycler_what_to_do);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
@@ -60,17 +60,13 @@ public class WhatToDoFragment extends Fragment {
             }
         }));
 
-        return v;
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        HomeViewModel mViewModel = ViewModelProviders.of(getActivity()).get(HomeViewModel.class);
-
         adapter = new MyListAdapter(getContext(), R.layout.item_list_arrow, ListResource.getInstance().getWhatToDoResource());
-
         recyclerView.setAdapter(adapter);
     }
 
@@ -100,9 +96,6 @@ public class WhatToDoFragment extends Fragment {
                     break;
                     case 6 : navigation.stranger_information_and_settings();
                 }
-
-            }else if (resultCode == Activity.RESULT_CANCELED){
-
             }
         }
     }

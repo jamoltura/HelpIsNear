@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>{
 
     private static final String TAG = "myLogs";
+
     private int resId;
     private LayoutInflater mInflater;
     private ArrayList<ElementList> list;
@@ -44,6 +45,10 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+    public int getItemHead(int index){
+        return list.get(index).getIdString();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
